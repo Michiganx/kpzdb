@@ -30,7 +30,7 @@ def notaries_data():
     for n in con.find('Notary'):
         rec = [n['LastName'], n['Name'], n['Region']]
         records.append(rec)
-    return records 
+    return records
 
 def orders_data():
     records =[]
