@@ -41,7 +41,7 @@ for poa in poas:
         node_label, rel_label = POAS_FOREIGN_KEYS[prop]
         fk_value = poa[prop]
         extern_node = con.find_one(node_label, 'id' + node_label, fk_value)
-        con.create(Relationship(extern_node, rel_label, poa)) 
+        con.create(Relationship(extern_node, rel_label, poa))
 
 orders = con.find("Order")
 for order in orders:
