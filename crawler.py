@@ -7,6 +7,7 @@ from py2neo import Graph, Node, Relationship
 con = Graph()
 con.delete_all()
 
+print('hello')
 
 POAS_PATH = 'http://localhost:60200/api/'
 POAS_RESOURCES =            ['notaries', 'people', 'subjects', 'poas']
